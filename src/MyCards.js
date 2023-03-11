@@ -14,6 +14,7 @@ export default function MyCards({ handleSubmit, name, setName, mp3Link, setMp3Li
             type="text"
             value={name}
             onChange={(event) => setName(event.target.value)}
+            placeholder="Name"
           />
         </label>
         <label className='card_label'>
@@ -23,6 +24,7 @@ export default function MyCards({ handleSubmit, name, setName, mp3Link, setMp3Li
             type="text"
             value={mp3Link}
             onChange={(event) => setMp3Link(event.target.value)}
+            placeholder="Video/Mp3 Link"
           />
         </label>
         </div>

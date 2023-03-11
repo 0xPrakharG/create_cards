@@ -14,6 +14,7 @@ export default function Bucket({ bucketName, setBucketName, handleBucketCreate, 
           value={bucketName}
           onChange={(event) => setBucketName(event.target.value)}
           className="bucket_label_input"
+          placeholder="Bucket Name"
         />
       </label>
       </div>
