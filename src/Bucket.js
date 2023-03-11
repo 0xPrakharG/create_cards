@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Bucket({ bucketName, setBucketName, handleBucketCreate, buckets, editingCardIndex, setEditingCardIndex, cards, handleBucketAddCard, onCardPlay, handleBucketRemoveCard }) {
+export default function Bucket({ bucketName, setBucketName, handleBucketCreate, buckets, editingCardIndex, setEditingCardIndex, cards, handleBucketAddCard, handleBucketRemoveCard }) {
   return (
     <div className='buckets'>
       <div>
@@ -47,7 +47,6 @@ export default function Bucket({ bucketName, setBucketName, handleBucketCreate, 
                   <div><a href={card.mp3Link} className='card_item_link'>Video/Mp3 Link</a></div>
                   </div>
                   <div className='bucket_card_btns'>
-                  <button className='card_btn' onClick={() => onCardPlay(card,card.mp3Link,cardIndex)}>Play</button>
                   <button className='card_btn' onClick={() => handleBucketRemoveCard(index, cardIndex)}>
                     Remove from Bucket
                   </button>

@@ -92,7 +92,7 @@ function Home() {
         <HistoryTab history={history}/>
       </div>
       </div>
-      <Bucket bucketName={bucketName} setBucketName={setBucketName} handleBucketCreate={handleBucketCreate} buckets={buckets} editingCardIndex={editingCardIndex} setEditingCardIndex={setEditingCardIndex} cards={cards} handleBucketAddCard={handleBucketAddCard} onCardPlay={onCardPlay} handleBucketRemoveCard={handleBucketRemoveCard} />
+      <Bucket bucketName={bucketName} setBucketName={setBucketName} handleBucketCreate={handleBucketCreate} buckets={buckets} editingCardIndex={editingCardIndex} setEditingCardIndex={setEditingCardIndex} cards={cards} handleBucketAddCard={handleBucketAddCard} handleBucketRemoveCard={handleBucketRemoveCard} />
     </div>
   );
 }
