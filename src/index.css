@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +16,333 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.home{
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.bucket_cards{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card_btn{
+  padding: 5px 8px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  background: #67696e;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Cards */
+
+.my_cards{
+  background: #DDAE7E;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  gap: 15px;
+}
+.cards_header{
+  text-align: left;
+  padding: 20px 0 15px 30px;
+}
+
+.cards_form{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cards_form_label{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.card_form_input{
+  margin-left: 5px;
+  border: none;
+  font-size: 15px;
+  height: 17px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card_label{
+  font-weight: 600;
+}
+
+.card_create_btn {
+  padding: 8px 15px;
+  margin-right: 10px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  background: #1876f2;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cards_list{
+  margin: auto 20px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 15px;
+  overflow-y: scroll;
+  padding-bottom: 10px;
+}
+
+.card_item{
+  width: 100px;
+  height: fit-content;
+  background: #f5e4b1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.card_item_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.card_item_info{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card_item_btns{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card_item_name{
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.card_item_link{
+  text-decoration: none;
+  color: #272b2b;
+  cursor: pointer;
+}
+
+/* Cards */
+
+/* Bucket */
+
+.buckets{
+  height: 100vh;
+  width: 50vw;
+  background: #3CCD93;
+}
+
+.buckets_header{
+  text-align: left;
+  padding: 20px 0 15px 30px;
+}
+
+.bucket_label{
+  font-weight: 600;
+}
+
+.bucket_label_input{
+  margin-left: 8px;
+  border: none;
+  font-size: 15px;
+  height: 17px;
+  width: 300px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.bucket_form{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bucket_form_label{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.bucket_list{
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  overflow-y: scroll;
+}
+
+.bucket_list_item{
+  text-align: left;
+  margin-top: 15px;
+}
+
+.bucket_list_item_top{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.bucket_list_item_selector{
+  display: flex;
+  gap: 30px;
+}
+
+.bucket_list_item_selector select{
+  border: none;
+  border-radius: 8px;
+}
+
+.bucket_list_item_header{
+  margin: 0 0 0 30px;
+}
+
+.add_to_bucket_btn{
+  padding: 8px 15px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  background: #272b2b;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bucket_list_item_card_list{
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 10px 15px;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.bucket_list_item_card{
+  margin-top: 15px;
+  width: 100px;
+  height: fit-content;
+  background: #bbebe9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 20px;
+}
+
+.bucket_card_info{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bucket_card_btns{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Bucket */
+
+/* History */
+
+.history{
+  height: 50vh;
+  width: 50vw;
+  background: #A299FF;
+}
+
+.history_header{
+  text-align: left;
+  padding: 20px 0 15px 30px;
+}
+
+.history_table_header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 30px;
+  gap: 200px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.history_list {
+  height: 35vh;
+  overflow-y: scroll;
+}
+
+.history_list_item{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 10px 30px 10px 5px;
+  text-align: left;
+  background: #6462626a;
+  padding: 7px 5px 7px 25px;
+  gap: 40px;
+  border-radius: 10px;
+}
+
+/* History */
+
+/* modal */
+
+.modal{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background: #0b0b0b6e;
+}
+
+.close{
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.close_btn{
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  background: #b0acac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -20px;
+}
+
+/* modal */
